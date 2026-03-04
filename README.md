@@ -1,18 +1,29 @@
 ![Project-eden-logo](https://github.com/felinis/RoomEditImproved/assets/94763702/3da3780a-0894-454b-8f1a-4e065329b44a)
 
 # Overview
-WIP level editor for Project Eden, a video game released originally in 2001 by the British studio Core Design.
-The program is written in high-quality C++.
+Work-in-progress level editor for Project Eden, a video game released in 2001 by Core Design.
+The program is written in C++. It is mostly object-oriented due to the nature of the file format although I am planning to switch over to a more data-oriented design.
 
-# Rendering Technology
-The program uses a modern and powerful Direct3D 12 renderer. Video RAM and GPU heaps are managed manually for maximum performance.
-On top of that, I implemented _bindless textures_, which is a powerful feature allowing for faster texture streaming.
+# Project status
+## Brief
+A Vulkan port is in the works. I believe it would make the software easier to port to other platforms like Linux when time comes. Stay tuned for more updates.
+## To Do list
+- Implement LZJAT decompression and compression
+- Implement texture WAD preview window
+- Implement actor preview window
+- Implement sound preview window
+- Implement game's original metallic shader
+- Update file format variable names with newest RE notes
 
-# The User Interface
-The program sports a lightweight UI, which was programmed using the native Windows API (Win32).
+# Rendering
+The application uses a modern Direct3D 12 renderer. Video RAM and GPU heaps are managed manually using a linear arena for maximum performance.
+On top of that, I implemented _bindless textures_, which is a feature allowing for more flexible texture streaming.
+
+# User Interface
+The program currently uses a Win32 UI, but I am currently planning on refactor it to use Dear ImGui instead.
 
 # Screens
-This screen shows the program user interface with a temple level loaded in. The user can add and remove objects, as well as alter their various attributes on the panel on the right.
+This screen shows the program user interface with a few levels loaded in. The UI is a work in progress.
 <img width="948" alt="up" src="https://github.com/felinis/RoomEditImproved/assets/94763702/69db9ec7-f0ed-44d2-96a8-2915ea365020">
 <img width="948" alt="down"
 src="https://github.com/felinis/RoomEditImproved/assets/94763702/e746ca92-8bad-4bf9-8e52-a0623ca49228">
@@ -24,3 +35,4 @@ src="https://github.com/felinis/RoomEditImproved/assets/94763702/e746ca92-8bad-4
 - Configure the CMakeLists.txt for the Visual Studio compiler. I personally used Visual Studio 2017 Professional.
 - Build.
 - Use the `edndec.exe` tool to decompress the level files, then open them inside Room Editor.
+ 
