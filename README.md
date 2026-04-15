@@ -4,6 +4,10 @@
 Work-in-progress level editor for Project Eden, a video game released in 2001 by Core Design.
 The program is written in C++. It is mostly object-oriented due to the nature of the file format although I am planning to switch over to a more data-oriented design.
 
+# Screens
+<img width="948" alt="up" src="https://github.com/felinis/RoomEditImproved/assets/94763702/69db9ec7-f0ed-44d2-96a8-2915ea365020">
+<img width="948" alt="down"src="https://github.com/felinis/RoomEditImproved/assets/94763702/e746ca92-8bad-4bf9-8e52-a0623ca49228">
+<img width="948" alt="room_editor_prop_value" src="https://github.com/felinis/RoomEditImproved/assets/94763702/3d5ec819-a61e-4bd4-ad07-328276621281">
 <img width="1896" height="1068" alt="image" src="https://github.com/user-attachments/assets/61fdb051-4728-4caf-8f87-56307cb702e9" />
 
 # Project status
